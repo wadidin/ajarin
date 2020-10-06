@@ -1,33 +1,38 @@
+/* CSS STYLE FROM WADIDIN.NHISTIC.COM */
+/* WEBSITE SAYA PRIBADI */
+
 
 /* variables */
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(283, 91%, 17%);
-  --clr-primary-2: hsl(283, 84%, 25%);
-  --clr-primary-3: hsl(283, 81%, 29%);
-  --clr-primary-4: hsl(278, 77%, 34%);
-  --clr-primary-5: #825BD1;
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(290, 57%, 50%);
-  --clr-primary-7: #AF7AC5;
-  --clr-primary-8: hsl(271, 80%, 74%);
-  --clr-primary-9: hsl(282, 38%, 95%);
-  --clr-primary-10: hsl(284, 100%, 92%);
+  /* dark shades of custom color*/
+  /* --clr-custom-1: hsl(43, 86%, 17%); */
+  --clr-custom-1: hsl(184, 91%, 17%);
+  --clr-custom-2: hsl(185, 84%, 25%);
+  --clr-custom-3: hsl(185, 81%, 29%);
+  --clr-custom-4: hsl(184, 77%, 34%);
+  --clr-custom-5: #2caeba;
+  /* lighter shades of custom color */
+  --clr-custom-6: hsl(185, 57%, 50%);
+  --clr-custom-7: hsl(184, 65%, 59%);
+  --clr-custom-8: hsl(184, 80%, 74%);
+  --clr-custom-9: hsl(185, 94%, 87%);
+  --clr-custom-10: hsl(186, 100%, 94%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(256, 61%, 16%);
-  --clr-grey-3: hsl(251, 35%, 30%);
-  --clr-grey-4: hsl(257, 28%, 39%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(263, 22%, 49%);
-  --clr-grey-8: hsl(268, 31%, 80%);
-  --clr-grey-9: hsl(273, 32%, 89%);
-  --clr-grey-10: hsl(257, 33%, 96%);
-  --clr-purple-dark: hsl(283, 67%, 35%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-green-dark: hsl(125, 67%, 35%);
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
+  --ff-custom: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
+  --ff-third: "Quicksand", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
@@ -40,14 +45,14 @@
 
 /* body */
 body {
-    font-family: var(--ff-secondary);
-    background: var(--clr-white);
-    margin: 0;
-    padding: 0;
-    color: var(--clr-grey-1);
-    line-height: 1.5;
-    font-size: 0.875rem;
-}
+  font-family: var(--ff-third);
+  background: var(--clr-white);
+  margin: 0;
+  padding: 0;
+  color: var(--clr-custom-3);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  }
 
 ul {
   list-style-type: none;
@@ -65,7 +70,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: var(--ff-custom);
 }
 
 h1 {
@@ -86,7 +91,7 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-grey-1);
 }
 
 @media screen and (min-width: 800px) {
@@ -126,9 +131,10 @@ header {
 }
 
 .navbar {
-  background: var(--clr-primary-7);
+  background: var(--clr-custom-4);
   padding: 5px;
   position: sticky;
+  overflow: hidden;
   top: 0;
   left: 0;
   height: 5rem;
@@ -150,7 +156,7 @@ header {
 }
 
 .nav-header img {
-    margin-bottom: 0.375rem;
+    margin-bottom: 0.05rem;
 }
 
 .toggle-btn {
@@ -163,7 +169,7 @@ header {
 }
 
 .toggle-btn:hover {
-    color: var(--clr-primary-1);
+    color: var(--clr-custom-1);
 }
 
 .nav-links {
@@ -207,9 +213,10 @@ header {
 
 @media screen and (min-width: 992px) {
   .navbar {
-    background: var(--clr-primary-7);
+    background: var(--clr-custom-4);
   }
 }
+
 /*===================*/
 
 /* Sidebar */
@@ -250,8 +257,8 @@ header {
 }
 
 .sidebar-links li a:hover {
-  background: var(--clr-primary-9);
-  color: var(--clr-primary-5);
+  background: var(--clr-custom-9);
+  color: var(--clr-custom-4);
 }
 
 .close-btn {
@@ -329,13 +336,159 @@ header {
     opacity: 1;
   }
 }
+
+/* social links */
+.social-links {
+  margin-top: 2rem;
+  width: 16rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  font-size: 1.75rem;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  color: var(--clr-custom-5);
+}
+/*===================*/
+
+
+/* main */
+main {
+  padding: 20px;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: auto;
+}
 /*===================*/
 
 
 /* footer */
 footer {
-    padding: 20px;
-    color: white;
-    background: var(--clr-primary-7);
+  margin-top: 30px;
+  padding: 5px;
+  background: var(--clr-custom-4);
 }
 
+.footer-custom {
+  width: 90vw;
+  max-width: 1170px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 16pt;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: var(--clr-white);
+}
+
+footer a {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: var(--clr-grey-1);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#content {
+  float: left;
+  width: 73%;
+}
+
+#content > h2 {
+  background-color: #4c5450;
+  padding: 15px;
+  color: white;
+}
+
+#content > h3 {
+  background-color: #60d0a8;
+  padding: 15px;
+  color: white;
+}
+
+.aright {
+  font-size: 12px;
+  float: right;
+  width: 27%;
+  padding-left: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:var(--clr-custom-5);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--clr-custom-8);
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    float: center;
+    width: 100%;
+  }
+
+  .aright {
+    float: center;
+    width: 107%;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
